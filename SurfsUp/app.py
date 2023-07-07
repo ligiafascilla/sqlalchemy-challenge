@@ -6,7 +6,7 @@ from sqlalchemy.orm import Session
 from sqlalchemy.ext.automap import automap_base
 
 # Database Setup
-engine = create_engine("sqlite:///your_database_file_path_here")
+engine = create_engine("sqlite:///")
 
 # reflect an existing database into a new model
 Base = automap_base()
