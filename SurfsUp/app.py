@@ -39,23 +39,19 @@ def home():
 @app.route("/api/v1.0/precipitation")
 def precipitation():
     """Precipitation data for the last 12 months"""
-    # Add the code for the precipitation route here
 
 @app.route("/api/v1.0/stations")
 def stations():
     """List of stations"""
-    # Add the code for the stations route here
 
 @app.route("/api/v1.0/tobs")
 def tobs():
     """Temperature observations for the previous year of the most active station"""
-    # Add the code for the tobs route here
 
 @app.route("/api/v1.0/<start>")
 @app.route("/api/v1.0/<start>/<end>")
 def temperature_stats(start, end=None):
     """Minimum, average, and maximum temperature for the specified date range"""
-    # Add the code for the temperature_stats route here
 
 if __name__ == '__main__':
     app.run(debug=True)
